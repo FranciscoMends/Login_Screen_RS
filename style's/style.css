@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+
+body {
+    margin: 0px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.main-login {
+    width: 100vw; /*Largura do centro até a borda (width)*/
+    height: 100vh; /*Largura do centro até a borda (height)*/
+    background-image: url(../Pictures/wallpaper.png);
+    background-size: cover;
+    background-position: center;
+    display: flex; /*As Div's ficam lado a lado (flex)*/
+    justify-content: center; /*Justifica tudo no centro (eixo x)*/
+    align-items: center; /*Justifica tudo no centro (eixo y)*/
+}
+
+.left-login {
+    width: 50vw;
+    height: 00vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Direciona o flex para colunas*/
+
+}
+
+.left-login > h1 {
+    font-size: 3vw;
+    color: #ffffff;
+}
+
+.left-login-image {
+    width: 25vw;
+}
+
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    width: 60%; /*Irá pegar 60% de 50vh*/
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px; /*Primeiro pixel (eixo y)  Segundo pixel (eixo x)*/
+    background-color: rgb(0, 0, 0, 0.65);
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #53010156; /*1ºpx = eixo x; 2ºpx = eixo y; 3ºpx = blur*/
+}
+
+.card-login > h1 {
+    color: #c93535;
+    font-weight: 800;
+    margin: 0px;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /*Trocou*/
+    justify-content: center; /*Justifica tudo no centro (eixo y)*/
+    align-items: flex-start; /*Justifica tudo no centro (eixo x)*/
+    margin: 10px 0px;
+}
+
+.textfield > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px; /*Eixo x e y*/
+    background: #3f1008;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none; /*Tira a barra da caixinha de texto ao clicar*/
+    box-sizing: border-box;
+}
+
+.textfield > label {
+    color: #f0ffff;
+    margin-bottom: 10px;
+}
+
+.textfield > input::placeholder { /*Entrando no botao de uma class*/
+    color: #ffffffb7;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800; /*Grossura da fonte*/
+    letter-spacing: 3px; /*Espaçamento entre as letras*/
+    color: #ffffff9c;
+    background-color: #ba2321;
+    cursor: pointer; /*Ação de clicável no botão*/
+    box-shadow: 0px 10px 40px -12px #ff000052;
+    transition: background-color .5s;
+}
+
+.btn-login:active {
+    background-color: #890303;
+}
+
+@media only screen and (max-width: 950px) {
+    .card-login {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-login {
+        flex-direction: column;
+    }
+
+    .left-login > h1 {
+        display: none;
+    }
+
+    .left-login {
+        width: 100%;
+        height: auto;
+    }
+
+    .right-login {
+        width: 100%;
+        height: auto;
+    }
+
+    .left-login-image {
+        width: 50vw;
+    }
+
+    .card-login {
+        width: 90%;
+    }
+}
+

@@ -1,0 +1,64 @@
+body {
+    margin: 0px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.main-login {
+    width: 100vw; /*Largura do centro até a borda (width)*/
+    height: 100vh; /*Largura do centro até a borda (height)*/
+    background-image: url(../Pictures/wallpaper_lobby.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg_box {
+    /* min-height: 704px; */
+    width: 90vw; /*Largura do centro até a borda (width)*/
+    height: auto; 
+    background-color: rgba(0, 0, 0, 0.632);
+    margin: auto;
+    border-radius: 80px;
+    padding: 30px;
+    justify-content: center; /*Justifica tudo no centro (eixo y)*/
+    align-items: center; /*Justifica tudo no centro (eixo x)*/
+}
+
+.bg_box > h1 {
+    text-align: center;
+    color: aliceblue;
+}
+
+.bg_box > p {
+    text-align: center;
+    color: aliceblue;
+}
+
+.btn-back {
+    width: 250px;
+    padding: 16px 0px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-left: 536px;
+    margin-top: 60px;    
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800; /*Grossura da fonte*/
+    letter-spacing: 3px; /*Espaçamento entre as letras*/
+    color: #ffffff9c;
+    background-color: #052879;
+    cursor: pointer; /*Ação de clicável no botão*/
+    box-shadow: 0px 10px 40px 12px #3700ff52;
+    transition: background-color .5s;
+}
+
+.btn-back:active {
+    background-color: #000639;
+}
