@@ -1,31 +1,43 @@
 body {
     margin: 0px;
     font-family: 'Noto Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 body * {
     box-sizing: border-box;
 }
 
-.main-login {
+.appbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #052879;
+    color: aliceblue;
+    padding: 10px;
+    width: 100%;
+}
+
+.background {
     width: 100vw; /*Largura do centro até a borda (width)*/
-    height: 100vh; /*Largura do centro até a borda (height)*/
+    height: 100%; /*Largura do centro até a borda (height)*/
     background-image: url(../Pictures/wallpaper_lobby.jpg);
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+    padding:40px 0px;
 }
 
 .bg_box {
-    /* min-height: 704px; */
-    width: 90vw; /*Largura do centro até a borda (width)*/
-    height: auto; 
-    background-color: rgba(0, 0, 0, 0.632);
+    width: 90vw;
+    min-height: 90vh;  
     margin: auto;
-    border-radius: 80px;
+    align-items: center;
     padding: 30px;
-    justify-content: center; /*Justifica tudo no centro (eixo y)*/
-    align-items: center; /*Justifica tudo no centro (eixo x)*/
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.58);
+    border-radius: 50px;
 }
 
 .bg_box > h1 {
@@ -34,18 +46,18 @@ body * {
 }
 
 .bg_box > p {
-    text-align: center;
+    text-align: justify;
     color: aliceblue;
+    
 }
 
 .btn-back {
-    width: 250px;
+    width: 180px;
     padding: 16px 0px;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    margin-left: 536px;
-    margin-top: 60px;    
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%,-100%);
+    position: absolute; */
     border: none;
     border-radius: 8px;
     outline: none;
