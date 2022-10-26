@@ -11,11 +11,54 @@ body * {
 .appbar {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between;
     background-color: #052879;
     color: aliceblue;
-    padding: 10px;
+    padding: 1px 30px;
     width: 100%;
+    position:fixed;
+    font-weight: 800; /*Grossura da fonte*/
+}
+
+.appbar_list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+}
+
+ul.appbar_list li {
+    margin-right: 50px;
+}
+
+.btn-logout {
+    border-radius: 30px;
+    padding: 7PX;
+    width: 90px;
+    border-color: aliceblue;
+    background-color: #052879;
+    color: aliceblue;
+    font-weight: 800; /*Grossura da fonte*/
+    transition: background-color .5s;
+    cursor: pointer;
+}
+
+.btn-logout:active {
+    background-color: #000639;
+}
+
+.appbar_dir {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon-perfil {
+    margin-left: 10px;
+    width: 40px;
 }
 
 .background {
@@ -25,7 +68,7 @@ body * {
     background-size: cover;
     background-position:center;
     background-attachment: fixed;
-    padding:40px 0px;
+    padding:90px 0px;
 }
 
 .bg_box {
@@ -54,10 +97,6 @@ body * {
 .btn-back {
     width: 180px;
     padding: 16px 0px;
-    /* top: 50%;
-    left: 50%;
-    transform: translate(-50%,-100%);
-    position: absolute; */
     border: none;
     border-radius: 8px;
     outline: none;

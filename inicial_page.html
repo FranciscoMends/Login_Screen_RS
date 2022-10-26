@@ -12,10 +12,23 @@
 <body>
     <header>
         <nav class="appbar"> 
-            <div>Menu</div>
-            <div>Sobre</div>
-            <div>Ajuda</div>
-            <div>Logout</div>
+            <div class="appbar_esq">
+                <ul class="appbar_list">
+                    <li>
+                        Menu
+                    </li>
+                    <li>
+                        Sobre
+                    </li>
+                    <li>
+                        Ajuda
+                    </li>
+                </ul>
+            </div>
+            <div class="appbar_dir">
+                <input type="button" class="btn-logout" value="Logout" onclick="redirecting_back()">
+                <input type="image" class="icon-perfil" src="Pictures\realLogo.png" alt="Perfil">
+            </div>
         </nav>
     </header>
     <div class="background">
