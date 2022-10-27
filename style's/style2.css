@@ -31,6 +31,12 @@ body * {
 
 ul.appbar_list li {
     margin-right: 50px;
+    cursor: pointer;
+}
+
+.options {
+    color: aliceblue;
+    text-decoration: none;
 }
 
 .btn-logout {
