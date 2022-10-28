@@ -37,7 +37,7 @@ body * {
 }
 
 .left-login-image {
-    width: 25vw;
+    width: 20vw;
 }
 
 .right-login {
@@ -46,6 +46,7 @@ body * {
     display: flex; 
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .card-login {
@@ -116,6 +117,27 @@ body * {
 
 .btn-login:active {
     background-color: #890303;
+}
+
+div#warning {
+    margin-top: 10px;
+    font: normal 10pt arial;
+    color: #ba2321;
+}
+
+.registration_question {
+    margin-top: 5px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    /* flex-direction:row; */
+    font: normal 11pt arial;
+    color: aliceblue;
+}
+
+.registration {
+    margin-left: 5px;
+    color: #fa2c28;
 }
 
 @media only screen and (max-width: 950px) {
