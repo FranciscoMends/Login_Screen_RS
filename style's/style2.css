@@ -104,27 +104,7 @@ ul.appbar_list li {
     
 }
 
-.btn-back {
-    width: 180px;
-    padding: 16px 0px;
-    border: none;
-    border-radius: 8px;
-    outline: none;
-    text-transform: uppercase;
-    font-weight: 800; /*Grossura da fonte*/
-    letter-spacing: 3px; /*Espaçamento entre as letras*/
-    color: #ffffff9c;
-    background-color: #052879;
-    cursor: pointer; /*Ação de clicável no botão*/
-    box-shadow: 0px 10px 40px 12px #3700ff52;
-    transition: background-color .5s;
-}
-
-.btn-back:active {
-    background-color: #000639;
-}
-
-.btn-top {
+.btnl-top {
     /* width: 100%;
     height: 40px; */
     display: flex;
@@ -141,6 +121,33 @@ ul.appbar_list li {
     padding: 10px;
 }
 
-.btn-top:hover {
+.btnl-top:hover {
     background-color: #383737;
+}
+
+.btn-top {
+    position: fixed;
+    bottom: 25px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color:#052879ae;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.arrow {
+    border: solid #ffffffda;
+    border-width: 0 6px 6px 0;
+    padding: 5px;
+    display: inline-block;
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
 }
