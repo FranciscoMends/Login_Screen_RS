@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0px;
     font-family: 'Noto Sans', sans-serif;
@@ -118,4 +122,25 @@ ul.appbar_list li {
 
 .btn-back:active {
     background-color: #000639;
+}
+
+.btn-top {
+    /* width: 100%;
+    height: 40px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f1f1f;
+    color: rgb(195, 196, 197);
+    font-weight: 800;
+    letter-spacing: 3px;
+    transition: background-color .5s;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.btn-top:hover {
+    background-color: #383737;
 }
