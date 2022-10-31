@@ -197,4 +197,17 @@ footer {
 
 .github {
     color: #054bef;
+    margin-left: 5px;
+
+}
+
+.finish {
+    display: flex;
+    align-items: center;
+}
+
+.final-icon {
+    margin-left: 5px;
+    width: 25px;
+    height: 25px;
 }
