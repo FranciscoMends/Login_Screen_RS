@@ -21,8 +21,9 @@ body * {
     color: aliceblue;
     padding: 1px 30px;
     width: 100%;
-    position:fixed;
-    font-weight: 800; /*Grossura da fonte*/
+    position: fixed;
+    font-weight: 800;
+    /*Grossura da fonte*/
 }
 
 .appbar_list {
@@ -50,7 +51,8 @@ ul.appbar_list li {
     border-color: aliceblue;
     background-color: #052879;
     color: aliceblue;
-    font-weight: 800; /*Grossura da fonte*/
+    font-weight: 800;
+    /*Grossura da fonte*/
     transition: background-color .5s;
     cursor: pointer;
 }
@@ -69,31 +71,37 @@ ul.appbar_list li {
 .icon-perfil {
     margin-left: 10px;
     width: 40px;
+    border: 2px solid rgb(198, 196, 196);
+    border-radius: 50%;
 }
 
 .background {
-    width: 100vw; /*Largura do centro até a borda (width)*/
-    height: 100%; /*Largura do centro até a borda (height)*/
+    width: 100vw;
+    /*Largura do centro até a borda (width)*/
+    height: 100%;
+    /*Largura do centro até a borda (height)*/
     background-image: url(../Pictures/wallpaper_lobby.jpg);
     background-size: cover;
-    background-position:center;
+    background-position: center;
     background-attachment: fixed;
-    padding:90px 0px;
+    padding: 90px 0px;
 }
 
 .background_two {
-    width: 100vw; /*Largura do centro até a borda (width)*/
-    height: 100%; /*Largura do centro até a borda (height)*/
+    width: 100vw;
+    /*Largura do centro até a borda (width)*/
+    height: 100%;
+    /*Largura do centro até a borda (height)*/
     background-image: url(../Pictures/wallpaper_lobby2.jpg);
     background-size: cover;
-    background-position:center;
+    background-position: center;
     background-attachment: fixed;
-    padding:90px 0px;
+    padding: 90px 0px;
 }
 
 .bg_box {
     width: 90vw;
-    min-height: 90vh;  
+    min-height: 90vh;
     margin: auto;
     align-items: center;
     padding: 30px;
@@ -103,15 +111,15 @@ ul.appbar_list li {
     border-radius: 50px;
 }
 
-.bg_box > h1 {
+.bg_box>h1 {
     text-align: center;
     color: aliceblue;
 }
 
-.bg_box > p {
+.bg_box>p {
     text-align: justify;
     color: aliceblue;
-    
+
 }
 
 .btnl-top {
@@ -139,7 +147,7 @@ ul.appbar_list li {
     right: 20px;
     width: 50px;
     height: 50px;
-    background-color:#052879ae;
+    background-color: #052879ae;
     border-radius: 50%;
     display: flex;
     flex-direction: row;
